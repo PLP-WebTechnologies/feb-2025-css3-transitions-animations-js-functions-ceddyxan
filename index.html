@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Smart Cedricks Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="welcomeText">Welcome!</h1>
+
+    <input type="text" id="nameInput" placeholder="Enter your name" />
+    <button id="saveNameBtn">Save Name</button>
+
+    <div class="theme-options">
+      <label for="colorTheme">Color Me Buttons:</label>
+      <select id="colorTheme">
+        <option value="teal">Teal</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="purple">Purple</option>
+        <option value="orange">Orange</option>
+        <option value="wine">Wine</option>
+        <option value="pink">Pink</option>
+        <option value="yellow">Yellow</option>
+      </select>
+    </div>
+
+    <button id="toggleThemeBtn">Whats Your Theme: Light / Dark</button>
+    <button id="resetBtn">Reset Settings</button>
+
+    <div class="dashboard-widgets">
+      <div class="widget">
+        <h2>Current Time</h2>
+        <p id="currentTime">--:--:--</p>
+      </div>
+      <div class="widget">
+        <h2>Today's Date</h2>
+        <p id="currentDate">--/--/----</p>
+      </div>
+      <div class="widget">
+        <h2>Motivational Quote</h2>
+        <p id="quoteText">You're awesome!</p>
+      </div>
+      <div class="widget">
+        <h2>Your Notes</h2>
+        <textarea id="notesArea" placeholder="Write your thoughts here..."></textarea>
+        <button id="saveNotesBtn">Save Notes</button>
+      </div>
+      <div class="widget">
+        <h2>To-Do List</h2>
+        <input type="text" id="todoInput" placeholder="New task" />
+        <button id="addTodoBtn">Add</button>
+        <ul id="todoList"></ul>
+      </div>
+      <div class="widget">
+        <h2>Local Weather</h2>
+        <p id="weatherInfo">Fetching weather...</p>
+      </div>
+      <div class="widget">
+        <h2>Top News (Static)</h2>
+        <ul id="newsList">
+          <li><a href="https://www.brookings.edu/articles/how-artificial-intelligence-is-transforming-the-world/">AI is transforming the world rapidly.</a></li>
+          <li><a href="https://www.travelers.com/resources/home/working-remotely/10-tips-for-staying-productive-when-working-from-home?utm_source=chatgpt.com">Tips to stay productive while working remotely.</a></li>
+          <li><a href="https://www.webmd.com/depression/ss/slideshow-easy-habits-improve-mental-health?utm_source=chatgpt.com">Simple habits to improve your mental health.</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
